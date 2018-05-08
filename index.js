@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
     res.sendFile(htmlRoot + "/about.html")
 })
-const port = 8000
+const port = process.env.PORT
 
 
 app.listen(port, ()=>{
